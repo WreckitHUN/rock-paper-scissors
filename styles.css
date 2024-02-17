@@ -20,3 +20,82 @@ h1{
     text-align: center;
     
 }
+
+.btn{
+    
+    width: 100px;
+    height: 100px;
+    background: #003049;
+    color: #fdf0d5;
+    font-size: 1.8rem;
+    border: 2px solid white;
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    background: #fdf0d5;
+    color: #003049; 
+    transform: scale(1.1);
+}
+
+.button-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.flex-c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message-area{
+    height: 75px;
+    font-weight: 900;
+    font-size: 5rem;
+    margin-top: 5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.counter-area{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.isPlaying{
+    animation: tada 1s;
+}
+
+@keyframes tada {
+    0% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+
+    10%,20% {
+        -webkit-transform: scale3d(.9,.9,.9) rotate(-3deg);
+        transform: scale3d(.9,.9,.9) rotate(-3deg)
+    }
+
+    30%,50%,70%,90% {
+        -webkit-transform: scale3d(1.1,1.1,1.1) rotate(3deg);
+        transform: scale3d(1.1,1.1,1.1) rotate(3deg)
+    }
+
+    40%,60%,80% {
+        -webkit-transform: scale3d(1.1,1.1,1.1) rotate(-3deg);
+        transform: scale3d(1.1,1.1,1.1) rotate(-3deg)
+    }
+
+    to {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1)
+    }
+}
