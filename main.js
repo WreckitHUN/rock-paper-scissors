@@ -77,7 +77,8 @@ const getRoundWinner = (playerChoice, computerChoice) => {
 let playerChoice = "";
 
 playerInputs.forEach((item) => (item.addEventListener("click", () => {
-    item.disabled = true;
+    playerInputs.forEach((button) => (
+        button.disabled = true))
     playerChoice = item.id;
     let computerChoice = randomComputerChoice();
 
